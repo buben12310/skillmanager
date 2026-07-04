@@ -4,11 +4,6 @@
 
 **一站式管理你所有 AI Agent 的 Skills 与 MCPs**
 
-[![Platform](https://img.shields.io/badge/platform-Windows)]()
-[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
-[![Flutter](https://img.shields.io/badge/Flutter-3.x-02569B)](https://flutter.dev)
-[![Go](https://img.shields.io/badge/Go-1.22+-00ADD8)](https://go.dev)
-
 [支持的 Agent](#-支持的-agent) · [下载安装](#-下载安装) · [使用指南](#-使用指南) · [构建指南](#-构建指南) · [贡献](#-贡献)
 
 </div>
