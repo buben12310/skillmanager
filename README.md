@@ -9,7 +9,7 @@
 [![Flutter](https://img.shields.io/badge/Flutter-3.x-02569B)](https://flutter.dev)
 [![Go](https://img.shields.io/badge/Go-1.22+-00ADD8)](https://go.dev)
 
-[功能特性](#-功能特性) · [支持的 Agent](#-支持的-agent) · [下载安装](#-下载安装) · [使用指南](#-使用指南) · [构建指南](#-构建指南) · [贡献](#-贡献)
+[支持的 Agent](#-支持的-agent) · [下载安装](#-下载安装) · [使用指南](#-使用指南) · [构建指南](#-构建指南) · [贡献](#-贡献)
 
 </div>
 
@@ -26,32 +26,6 @@
 - 想从 GitHub 找新 Skill，但要手动 clone、放对目录、命名正确
 
 **SkillManager** 把这些都收进一个桌面应用：浏览 → 安装 → 启停 → 备份，全图形化操作。
-
----
-
-## ✨ 功能特性
-
-### Agent 管理
-- 🤖 **预设 7 个 Agent**：Claude Code / Codex / OpenCode / Hermes / Trae / ZCode / WorkBuddy，开箱即用
-- 🔍 **自动扫描**：一键检测已安装的 Agent 及其 Skill 目录（支持多候选路径 + 递归深度扫描）
-- 📁 **自定义 Agent**：通过文件资源管理器选择路径，添加任何兼容 SKILL.md 标准的 Agent
-
-### Skill 管理
-- 📦 **统一视图**：每个 Agent 下的 Skill 一目了然，支持启用/禁用切换
-- 🌐 **GitHub 市场**：浏览热门 Skill 仓库，关键词搜索（直连 GitHub API），一键安装
-- 🧠 **智能安装**：自动识别三种仓库结构（单 skill / skillpack / multi-skill），无需手动调整目录
-- 📥 **本地导入**：从本地文件夹导入 Skill，支持导出到其他 Agent
-- 📖 **SKILL.md 渲染**：内置 Markdown 渲染器，直接预览 Skill 说明文档
-
-### MCP 管理
-- 🔌 **MCP 配置**：每个 Agent 下的 MCP 服务集中管理
-- 🤝 **握手测试**：基于子进程握手协议的 MCP 连接测试，验证可用性
-
-### 体验优化
-- 🎨 **主题定制**：亮/暗模式 + 5 种强调色，即时切换
-- 💾 **备份恢复**：一键导出所有 Agent/Skill/MCP 配置为 ZIP，迁移无忧
-- ⚡ **跨平台**：Windows / macOS / Linux 全平台支持
-- 🔒 **本地优先**：所有数据存储在本地 SQLite，不上传任何信息
 
 ---
 
@@ -115,38 +89,6 @@
 1. 进入 Agent 详情页，切换到 MCPs 标签
 2. 点击「添加 MCP」，填写名称、命令、参数
 3. 点击「测试连接」验证 MCP 可用性
-
-### 主题与设置
-
-- 进入「设置」页面可切换亮/暗模式、选择强调色
-- 可选填 GitHub Token 提升市场 API 配额（从 60 req/h 提升到 5000 req/h）
-- 「备份」功能可导出全部配置为 ZIP 文件
-
----
-
-## 🏗️ 架构概览
-
-SkillManager 采用 **Flutter UI + Go 内核** 的双进程架构：
-
-```
-┌─────────────────┐       HTTP REST        ┌─────────────────┐
-│   Flutter UI    │ <───────────────────> │    Go Core      │
-│  Riverpod + MD3 │   stdout JSON 握手     │  chi + SQLite   │
-└─────────────────┘                        └─────────────────┘
-                                                      │
-                                                      ▼
-                                           ┌──────────────────┐
-                                           │ GitHub API       │
-                                           │ (市场浏览/搜索)   │
-                                           └──────────────────┘
-```
-
-- **UI 层**：Flutter Desktop + Riverpod + Material 3
-- **内核层**：Go + chi 路由 + modernc.org/sqlite（纯 Go，无 CGO）
-- **IPC**：子进程 + stdout JSON 握手 + HTTP REST（127.0.0.1）
-- **数据**：SQLite 本地存储，所有路径用 `~/...` 形式跨平台
-
-> 详细的架构说明、数据库 Schema、扫描算法等见 [DEVELOPER.md](DEVELOPER.md)
 
 ---
 
