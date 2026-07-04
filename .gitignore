@@ -1,0 +1,76 @@
+# Build artifacts
+**/build/
+**/Debug/
+**/Release/
+**/*.exe
+**/*.pdb
+**/*.dll
+**/*.so
+**/*.dylib
+
+# Release output
+release/
+app/assets/bin/
+
+# Flutter
+app/.dart_tool/
+app/.flutter-plugins
+app/.flutter-plugins-dependencies
+app/.packages
+app/.pub-cache/
+app/.pub/
+app/coverage/
+app/Generated.xcconfig
+app/Flutter/ephemeral/
+app/Flutter/flutter_export_environment.sh
+app/Flutter/podhelper.rb
+app/ServiceDefinitions.json
+app/ephemeral/
+app/Runner/GeneratedPluginRegistrant.*
+app/windows/flutter/generated_plugin_registrant.cc
+app/windows/flutter/generated_plugins.cmake
+app/linux/flutter/ephemeral/
+app/macos/Flutter/ephemeral/
+app/ios/Flutter/Generated.xcconfig
+app/ios/Flutter/flutter_export_environment.sh
+app/ios/Flutter/podhelper.rb
+app/ios/ServiceDefinitions.json
+
+# Go
+skillmanager-core/skillmanager-core.exe
+skillmanager-core/skillmanager-core
+skillmanager-core/*.test
+skillmanager-core/vendor/
+*.test
+
+# IDE
+.vscode/
+.idea/
+*.iml
+*.code-workspace
+.project
+.classpath
+.settings/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Env / Logs
+.env
+.env.local
+*.log
+crash_*.txt
+
+# 数据库 / 缓存
+*.db
+*.sqlite
+*.sqlite-journal
+skillmanager-core/data/
+skillmanager-core/cache/
+
+# 文档:只保留 README.md,排除其他根目录 md 文件
+/DEVELOPER.md
+/DESIGN_SPEC.md
+/DEVELOPMENT_PLAN.md

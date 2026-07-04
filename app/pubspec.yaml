@@ -1,0 +1,34 @@
+name: skillmanager
+description: "Agent Skill Manager - 桌面端 AI Agent 技能与 MCP 管理工具"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.12.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  go_router: ^14.6.2
+  flutter_riverpod: ^2.6.1
+  riverpod_annotation: ^2.6.1
+  flutter_markdown: ^0.7.4+3
+  shared_preferences: ^2.3.3
+  file_picker: ^8.1.4
+  archive: ^3.6.1
+  path: ^1.9.0
+  google_fonts: ^6.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  build_runner: ^2.4.13
+  riverpod_generator: ^2.6.3
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/bin/
+    - assets/images/
