@@ -4,7 +4,7 @@
 
 **一站式管理你所有 AI Agent 的 Skills 与 MCPs**
 
-[![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-blue)]()
+[![Platform](https://img.shields.io/badge/platform-Windows)]()
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 [![Flutter](https://img.shields.io/badge/Flutter-3.x-02569B)](https://flutter.dev)
 [![Go](https://img.shields.io/badge/Go-1.22+-00ADD8)](https://go.dev)
