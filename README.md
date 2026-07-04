@@ -170,9 +170,6 @@ skillmanager/
 │       ├── marketplace/     # GitHub 客户端 + 智能安装
 │       └── storage/         # SQLite + 迁移 + 预设数据
 ├── release.ps1              # 一键构建脚本
-├── DESIGN_SPEC.md           # 设计规范
-├── DEVELOPMENT_PLAN.md      # 开发规划
-├── DEVELOPER.md             # 开发者文档（架构细节）
 └── README.md                # 本文档
 ```
 
@@ -181,8 +178,6 @@ skillmanager/
 ## 🤝 贡献
 
 欢迎通过 Issue 提供意见、报告 Bug 或讨论功能建议。
-
-开发相关细节请参考 [DEVELOPER.md](DEVELOPER.md)。
 
 ---
 
