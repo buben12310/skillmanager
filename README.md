@@ -178,39 +178,11 @@ skillmanager/
 
 ---
 
-## 🗺️ 路线图
-
-- [x] M1-M3：Flutter UI + Mock 数据
-- [x] M4-M5：Go 内核 + HTTP 仓储 + Skill/MCP CRUD
-- [x] M6：GitHub 市场集成 + 智能安装
-- [x] M7：备份/恢复、主题、polish
-- [x] 7 个 Agent 自动扫描 + 递归深度 Skill 发现
-- [ ] Skill 上游自动更新检测
-- [ ] macOS / Linux 打包发布
-- [ ] 自定义 Agent 格式插件系统
-- [ ] Skill 依赖冲突检测
-
----
-
 ## 🤝 贡献
 
-欢迎通过 Issue 和 PR 贡献代码！
-
-1. Fork 本仓库
-2. 创建特性分支：`git checkout -b feature/your-feature`
-3. 提交更改：`git commit -m 'feat: add your feature'`
-4. 推送分支：`git push origin feature/your-feature`
-5. 提交 Pull Request
+欢迎通过 Issue 提供意见、报告 Bug 或讨论功能建议。
 
 开发相关细节请参考 [DEVELOPER.md](DEVELOPER.md)。
-
-### 贡献方向
-
-- 🐛 报告 Bug：通过 Issue 描述复现步骤
-- 💡 功能建议：欢迎在 Issue 中讨论
-- 🌍 适配新 Agent：参考 `agentCandidate` 结构体添加新 Agent 支持
-- 📝 完善文档：README / DEVELOPER.md / 代码注释
-- 🎨 UI/UX 改进：欢迎提供设计建议
 
 ---
 
