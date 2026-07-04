@@ -74,3 +74,8 @@ skillmanager-core/cache/
 /DEVELOPER.md
 /DESIGN_SPEC.md
 /DEVELOPMENT_PLAN.md
+
+# Backup files
+*~
+*.bak
+*.tmp
